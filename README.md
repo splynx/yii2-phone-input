@@ -18,19 +18,23 @@ Original demo can be found here - [http://jackocnr.com/intl-tel-input.html](http
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
-
-```bash
-$ php composer.phar require "borales/yii2-phone-input" "*"
+```
+    "repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/splynx/yii2-phone-input"
+		},
+		{
+			"type": "composer",
+			"url": "https://asset-packagist.org"
+		}
+	],
+	"require": {
+		"borales/yii2-phone-input": "dev-master",
+	},
 ```
 
-or add
-
-```
-"borales/yii2-phone-input": "*"
-```
-
-to the `require` section of your `composer.json` file.
+to your `composer.json` file.
 
 ## Usage
 
