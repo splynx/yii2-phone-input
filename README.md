@@ -19,7 +19,7 @@ Original demo can be found here - [http://jackocnr.com/intl-tel-input.html](http
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```
-    "repositories": [
+	"repositories": [
 		{
 			"type": "vcs",
 			"url": "https://github.com/splynx/yii2-phone-input"
@@ -30,8 +30,8 @@ The preferred way to install this extension is through [composer](http://getcomp
 		}
 	],
 	"require": {
-		"borales/yii2-phone-input": "dev-master",
-	},
+		"splynx/yii2-phone-input": "dev-master"
+	}
 ```
 
 to your `composer.json` file.
@@ -130,8 +130,7 @@ class Company extends Model
 ```
 
 You can also thanks to this behavior save to database country code of the phone number. Just add your attribute as
- `countryCodeAttribute` and it'll be inserted into database with the phone number.
-
+`countryCodeAttribute` and it'll be inserted into database with the phone number.
 
 ```php
 namespace frontend\models;
@@ -156,5 +155,6 @@ class Company extends Model
 ```
 
 > Note: `nationalMode` option is very important! In case if you want to manage phone numbers with country/operator code
-- you have to set `nationalMode: false` in widget options 
-(for example, `PhoneInput::widget(...options, ['jsOptions' => ['nationalMode' => false]])`).
+
+- you have to set `nationalMode: false` in widget options
+  (for example, `PhoneInput::widget(...options, ['jsOptions' => ['nationalMode' => false]])`).
