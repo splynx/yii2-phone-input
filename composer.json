@@ -1,5 +1,5 @@
 {
-    "name": "borales/yii2-phone-input",
+    "name": "splynx/yii2-phone-input",
     "description": "Yii2 International telephone numbers - Asset Bundle, Behavior, Validator, Widget",
     "keywords": [
         "yii2",
@@ -10,10 +10,10 @@
     "minimum-stability": "dev",
     "license": "BSD-3-Clause",
     "type": "yii2-extension",
-    "homepage": "https://github.com/Borales/yii2-phone-input",
+    "homepage": "https://github.com/splynx/yii2-phone-input",
     "support": {
-        "issues": "https://github.com/Borales/yii2-phone-input/issues?state=open",
-        "source": "https://github.com/Borales/yii2-phone-input"
+        "issues": "https://github.com/splynx/yii2-phone-input/issues?state=open",
+        "source": "https://github.com/splynx/yii2-phone-input"
     },
     "authors": [{
         "name": "Borales (Alexandr Bordun)",
@@ -30,7 +30,9 @@
     }],
     "require": {
         "bower-asset/intl-tel-input": "^16",
-        "giggsey/libphonenumber-for-php": "^8",
-        "yiisoft/yii2": ">=2.0.1"
+        "giggsey/libphonenumber-for-php": "^8"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
     }
 }
